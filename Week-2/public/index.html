@@ -32,14 +32,32 @@ document.getElementById('quoteDisplay').innerText = 'Error fetching quote.';
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Square Calculator</title>
+<!--<title>Square Calculator</title>
 </head>
-    <body>
-        <h1>Square Calculator</h1>
-        <form action="/square" method="GET"></form>
+<body>
+<h1>Square Calculator</h1>
+<form action="/square" method="GET">
 <label for="num">Enter a number:</label>
 <input type="text" id="num" name="num" required>
 <button type="submit">Calculate Square</button>
-                                                    
+</form>
+</body>-->
+
+<title>Mathematical Operations</title>
+</head>
+<body>
+<h1>Calculate Addition</h1>
+
+<form action="/calculate" method="GET">
+
+<label for="num1">Enter number 1:</label>
+<input type="text" id="num1" name="num1" required><br><br>
+
+<label for="num2">Enter number 2:</label>
+<input type="text" id="num2" name="num2" required><br><br>
+
+<button type="submit">Calculate Addition</button>
+</form>
+
 </body>
 </html>

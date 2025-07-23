@@ -66,18 +66,25 @@ const sum = a + b;*/
 app.use(express.static(path.join(__dirname, 'public')));
 // Define a GET endpoint at '/square' that calculates the square of a number.
 // The endpoint expects a query parameter 'num', e.g., /square?num=5
-app.get('/square', (req, res) => {
+app.get('/calculate', (req, res) => {
 // Extract the 'num' query parameter from the request and convert it to a floating point number.
-const num = parseFloat(req.query.num);
+const num1 = parseFloat(req.query.num1);
+const num2 = parseFloat(req.query.num2);
 // Check if 'num' is not a valid number. If it's not, send an error message as the response.
-if (isNaN(num)) {
+if (isNaN(num1)||isNaN(num2)) {
 return res.send("Error: Please provide a valid number using query parameter 'num'.");
 }
-// Calculate the square of the number.
-const square = num * num;
+// Calculate the sum of 2 numbers.
+const sum = num1 + num2;
+const mul=num1*num2;
 // Send a plain text response showing the result.
-res.send(`The square of ${num} is: ${square}`);
+res.type('html');
+res.send(`The sum of number 1: ${num1} 
+          and number 2: ${num2} is: ${sum}<br><br>
+          
+          Their multiplication is: ${mul}`);
 });
+
 // Start the server and have it listen on the specified port.
 // Once the server is running, log a message to the console indicating where it's accessible.
 app.listen(PORT, () => {
