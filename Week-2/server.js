@@ -77,12 +77,13 @@ return res.send("Error: Please provide a valid number using query parameter 'num
 // Calculate the sum of 2 numbers.
 const sum = num1 + num2;
 const mul=num1*num2;
+const sub = num1-num2;
 // Send a plain text response showing the result.
 res.type('html');
 res.send(`The sum of number 1: ${num1} 
           and number 2: ${num2} is: ${sum}<br><br>
-          
-          Their multiplication is: ${mul}`);
+          Their multiplication is: ${mul}<br><br>
+          Their Subraction is: ${sub}`);
 });
 
 // Start the server and have it listen on the specified port.
