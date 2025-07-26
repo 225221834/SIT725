@@ -7,8 +7,8 @@ height: 56px;
 margin: 4px 0;
 }
 .main-body {
-background-color: #F28487;
-color: rgb(243, 194, 194);
+background-color: #d58e90;
+color: rgb(243, 224, 224);
 height: calc(100vh - 64px);
 }
 .materialboxed-image {
