@@ -7,9 +7,15 @@ height: 56px;
 margin: 4px 0;
 }
 .main-body {
-background-color: #d58e90;
 color: rgb(243, 224, 224);
-height: calc(100vh - 64px);
+height: 100vh;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #d58e90; /* same as .main-body */
 }
 .materialboxed-image {
 margin: 0 auto;
@@ -27,4 +33,6 @@ margin-top: 50px;
   flex-direction: column;
   justify-content: space-between;
 }
+
+
 
