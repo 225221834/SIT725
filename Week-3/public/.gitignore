@@ -1,1 +1,2 @@
-
+touch .gitignore
+echo .DS_Store >> .gitignore
