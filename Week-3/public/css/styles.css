@@ -7,15 +7,15 @@ height: 56px;
 margin: 4px 0;
 }
 .main-body {
-color: rgb(243, 224, 224);
-height: 100vh;
+color: rgb(59, 57, 57);/* text color*/
+height: 100vh;/* sets height to viewport height */
 }
 
 html, body {
   height: 100%;
   margin: 0;
   padding: 0;
-  background-color: #d58e90; /* same as .main-body */
+  background-color: #d58e90; /* background color for page */
 }
 .materialboxed-image {
 margin: 0 auto;

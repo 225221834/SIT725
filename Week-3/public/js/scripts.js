@@ -46,7 +46,7 @@ const cardList = [
         $('.materialboxed').materialbox();
         $('#formSubmit').click(()=>{
           submitForm(); 
-        
+       })
         //click me button listener, opens modal when clicked
         $('#clickMeButton').click(() => {
         $('#modal1').modal('open');
