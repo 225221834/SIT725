@@ -12,11 +12,22 @@ const cardList = [
             link: "About Pattern 3",
             description: "Demo description about Pattern 3"
         }
+    
     ]
     const clickMe = () => {
-        alert("Thanks for clicking me. Best wishes for a nice day!")
+        alert("Thanks for clicking me. Best wishes for a nice day!")
     }
     
+    const submitForm = () => {
+    let formData = {};
+        formData.first_name = $('#first_name').val();
+        formData.last_name = $('#last_name').val();
+        formData.password = $('#password').val();
+        formData.email = $('#email').val();
+
+        console.log("Form Data Submitted: ", formData);
+    }
+
     const addCards = (items) => {
         items.forEach(item => {
             let itemToAppend = '<div class="col s4 center-align">'+
@@ -28,14 +39,15 @@ const cardList = [
             '<p class="card-text">'+item.description+'</p>'+
           '</div></div></div>';
           $("#card-section").append(itemToAppend)
-        });
+       });
     }
     
     $(document).ready(function(){
-        $('.materialboxed').materialbox();
-        $('#clickMeButton').click(()=>{
-            clickMe();
-        })
-        addCards(cardList);
-      });
+        $('.materialboxed').materialbox();
+        $('#formSubmit').click(()=>{
+          submitForm();
+       })
+        addCards(cardList);
+        $('.modal').modal();
+       });
     
