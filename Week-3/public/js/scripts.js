@@ -45,9 +45,15 @@ const cardList = [
     $(document).ready(function(){
         $('.materialboxed').materialbox();
         $('#formSubmit').click(()=>{
-          submitForm();
+          submitForm(); 
+        
+        //click me button listener, opens modal when clicked
        })
+        $('#clickMeButton').click(() => {
+        $('#modal1').modal('open');
+
+       });
         addCards(cardList);
         $('.modal').modal();
-       });
+    });
     
