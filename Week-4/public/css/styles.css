@@ -1,0 +1,38 @@
+.navbar-size {
+width: 95%;
+margin: 0 auto;
+}
+.user-image-size {
+height: 56px;
+margin: 4px 0;
+}
+.main-body {
+color: rgb(59, 57, 57);/* text color*/
+height: 100vh;/* sets height to viewport height */
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #d58e90; /* background color for page */
+}
+.materialboxed-image {
+margin: 0 auto;
+height: 400px;
+
+}
+.click-me-button {
+background-color: #EE6E73;
+margin-top: 50px;
+}
+
+.card.medium {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+
