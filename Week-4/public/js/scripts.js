@@ -11,9 +11,9 @@ const cardList = [
             image: "images/image3.jpg",
             link: "About Pattern 3",
             description: "Demo description about Pattern 3"
-        }
-    
+        },
     ]
+
     const clickMe = () => {
         alert("Thanks for clicking me. Best wishes for a nice day!")
     }
@@ -52,7 +52,20 @@ const cardList = [
         $('#modal1').modal('open');
 
        });
+
+        getProjects();
+        $('.modal').modal(); 
+
         addCards(cardList);
         $('.modal').modal();
     });
+
+const getProjects = () => {
+    $.get('/api/projects',(response) => {
+    (response.statusCode==200)
+        {addCards(response.data)
+    }
+    })
+}
+
     
