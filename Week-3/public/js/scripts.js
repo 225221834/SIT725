@@ -1,22 +1,28 @@
 
 const cardList = [
         {
-            title: "Pattern 2",
+            title: "Pattern 1",
             image: "images/image2.jpg",
+            link: "About Pattern 1",
+            description: "Demo description about Pattern 1"
+        },
+        {
+            title: "Pattern 2",
+            image: "images/image3.jpg",
             link: "About Pattern 2",
             description: "Demo description about Pattern 2"
         },
-        {
+        {
             title: "Pattern 3",
-            image: "images/image3.jpg",
+            image: "images/image1.jpg",
             link: "About Pattern 3",
             description: "Demo description about Pattern 3"
         }
     
     ]
-    const clickMe = () => {
+    /*const clickMe = () => {
         alert("Thanks for clicking me. Best wishes for a nice day!")
-    }
+    }*/
     
     const submitForm = () => {
     let formData = {};
