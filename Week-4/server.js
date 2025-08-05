@@ -29,25 +29,22 @@ const Project = mongoose.model('Project', ProjectSchema);
     const projects = await Project.find({});
     res.json({ statusCode: 200, data: projects, message: 'Success' });
 });
-    // 4. Start server
-    app.listen(port, () => {
-    console.log(`App listening on port ${port}`);
-});
+    
 
-const cardList = [
+/*const cardList = [
 {
-    title: "Kitten 2",
-    image: "images/kitten-2.jpg",
-    link: "About Kitten 2",
-    desciption: "Demo desciption about kitten 2"
+    title: "Pattern 2",
+    image: "images/image2.jpg",
+    link: "About Pattern 2",
+    desciption: "Demo desciption about Pattern 2"
 },
 {
-    title: "Kitten 3",
-    image: "images/kitten-3.jpg",
-    link: "About Kitten 3",
-    desciption: "Demo desciption about kitten 3"
+    title: "Pattern 3",
+    image: "images/image3.jpg",
+    link: "About Pattern 3",
+    desciption: "Demo desciption about Pattern 3"
 }
-]
+]*/
     app.get('/api/projects',(req,res) => {
     res.json({statusCode: 200, data: cardList, message:"Success"})
 })

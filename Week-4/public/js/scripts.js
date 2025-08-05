@@ -1,5 +1,5 @@
 
-const cardList = [
+/*const cardList = [
         {
             title: "Pattern 2",
             image: "images/image2.jpg",
@@ -12,11 +12,7 @@ const cardList = [
             link: "About Pattern 3",
             description: "Demo description about Pattern 3"
         },
-    ]
-
-    const clickMe = () => {
-        alert("Thanks for clicking me. Best wishes for a nice day!")
-    }
+    ]*/
     
     const submitForm = () => {
     let formData = {};

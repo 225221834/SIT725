@@ -17,6 +17,18 @@ html, body {
   padding: 0;
   background-color: #d58e90; /* background color for page */
 }
+
+body {
+
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+  }
+
 .materialboxed-image {
 margin: 0 auto;
 height: 400px;
@@ -32,7 +44,5 @@ margin-top: 50px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  width: 100%;
 }
-
-
-

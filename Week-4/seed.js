@@ -16,6 +16,12 @@ const Project = mongoose.model('Project', ProjectSchema);
 
 const sampleData = [
   {
+    title: "Pattern 1",
+    image: "images/image1.jpg",
+    link: "About Pattern 1",
+    description: "A touch of beauty",
+  },
+  {
     title: "Pattern 2",
     image: "images/image2.jpg",
     link: "About Pattern 2",

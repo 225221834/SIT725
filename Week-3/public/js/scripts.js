@@ -20,9 +20,6 @@ const cardList = [
         }
     
     ]
-    /*const clickMe = () => {
-        alert("Thanks for clicking me. Best wishes for a nice day!")
-    }*/
     
     const submitForm = () => {
     let formData = {};
