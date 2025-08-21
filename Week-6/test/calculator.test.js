@@ -21,17 +21,17 @@ describe("Sum Calculator API", function () {
         );
     });
     it("should handle missing parameters", function (done) {
-        request.get(`${baseUrl}/add?a=10`, function (error, response, body) {
-            expect(response.statusCode).to.not.equal(200); // Expect error
+        request.get(`${baseUrl}/add?a=10`, function (error, response, body) { //Sends a GET request to the /add endpoint with only one query parameter: a=10
+            expect(response.statusCode).to.not.equal(200); // Expect error - b is not provided, which should trigger an error from the API
             done();
         });
     });
     it("should return error for non-numeric input", function (done) {
         request.get(
-            `${baseUrl}/add?a=hello&b=world`,
-            function (error, response, body) {
-                expect(response.statusCode).to.not.equal(200);
-                done();
+            `${baseUrl}/add?a=hello&b=world`,//Sends a GET request to /add with non-numeric values: a=hello and b=world
+            function (error, response, body) {//The API is expected to validate input types and reject this request
+                expect(response.statusCode).to.not.equal(200);//asserts that the response status code should not be 200, meaning the API correctly rejects invalid input
+                done();//closes callback and test case 
             }
         );
     });
