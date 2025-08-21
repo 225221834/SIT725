@@ -12,7 +12,7 @@ describe("Sum Calculator API", function () {
     });
     it("should return correct sum for valid numbers", function (done) {
         request.get(
-            `${baseUrl}/add?a=10&b=5`,
+            `${baseUrl}/add?a=10&b=5`,//calling the /add enpoint with query parameters a=10 & b=5, baseUrl = localhost: 3000
             function (error, response, body) {
                 expect(response.statusCode).to.equal(200);
                 expect(body).to.include("15"); // Response contains the sum in plain text or HTML
