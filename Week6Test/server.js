@@ -1,11 +1,12 @@
 var express = require("express");
-const path = require("path"); // Make sure to include this
+const path = require("path"); 
 var app = express();
 var port = process.env.port || 3000;
 
 // Serve static files from the "public" folder
 app.use(express.static(path.join(__dirname, "public")));
 
+//API GET endpoint
 app.get("/multiply", (req, res) => {
     //defines a GET route at /multiply
 
@@ -21,7 +22,7 @@ app.get("/multiply", (req, res) => {
     const result = a * b;
 
     res.type('html');
-    res.send(`The multplication of ${a} and ${b} is: ${result}`);
+    res.send(`The multiplication of ${a} x ${b} is: ${result}`);
 
 });
 
