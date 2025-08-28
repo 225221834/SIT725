@@ -1,6 +1,7 @@
 
 var express = require("express")
-var app = express()
+var app = express();
+exports.app = app;
 
 app.use(express.static(__dirname+'/public'))
 app.use(express.json());
