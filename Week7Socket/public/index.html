@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Chat App</title>
+</head>
+<body>
+  <ul id="messages"></ul>
+  <form id="form">
+    <!-- autocomplete="off" disables the browser’s autofill suggestions, so it won’t try to guess or remember previous inputs.--> 
+    <input id="input" autocomplete="off" /><button>Send</button>
+  </form>
+    <!-- his tag tells the browser to load and execute a JavaScript file.
+    src="/socket.io/socket.io.js": This points to the Socket.IO client library served by the Node.js server-->
+  <script src="/socket.io/socket.io.js"></script>
+  <!-- This tag tells the browser to load and execute a JavaScript file in js folder-->
+  <script src="js/scripts.js"></script>
+</body>
+</html>
